@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind Css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <!--Page Title-->
+    <title>CRA-TEMPLATE</title>
+
+    <!--STYLING-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap');
+        * {
+            font-family: 'Archivo' sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+
+        <!--Navbar-->
+        <nav class="bg-white ">
+            <div class="container border-b-4 border-b-gray-300 ">
+                <div class="flex flex-row justify-between py-3 ">
+                    <a href="index.html">
+                        <p>BEJAMAS</p>
+                    </a>
+                    <button class="relative">
+                        <span class="material-icons-outlined">
+                            shopping_cart
+                            </span>
+                            <div class="absolute bottom-0 left-5">
+                                <sub class=" opacity-0 w-1 h-0.5 text-xs p-1 bg-black text-white rounded-sm">0</sub>
+                            </div>
+                            
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!--End of Navbar-->
+
+        <!--PHOTO OF THE DAY-->
+        <div class="container">
+            <div class="flex flex-row justify-between py-4">
+                <!--Photo Title-->
+                <h3 class="capitalize text-3xl font-bold">samurai king resting</h3>
+                <!--Add To Cart Button-->
+                <button class="bg-black text-white uppercase h-12 w-64 text-2xl">add to cart</button>
+            </div>
+            <!--Photo Box-->
+            <div class="relative py-3">
+                <img src="/potd.jpg" alt="">
+                <div class="absolute bottom-0 left-0">
+                    <div class="bg-white font-semibold text-sm text-black w-64 h-16 text-center py-3">Photo of the day</div>
+                </div>
+            </div>
+        </div>
+        <!--DETAILS OF PHOTO OF THE DAY-->
+        <div class="container border-b-4 border-b-gray-300">
+            <div class="flex flex-col md:flex-row py-3">
+                <!--About Photo of the Day-->
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-black font-bold text-xl">About the Samurai King Resting</h4>
+                    <span class="pt-3 pb-5 text-gray-600 text-xl font-bold">Pets</span>
+                    <!--Text-->
+                    <p class="text-xl text-gray-600">So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text
+                     to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder 
+
+                        text <br/> <br/>to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock.</p>
+                </div>
+                <!--Related Posts-->
+                <div class="w-full md:w-1/2">
+                    <!--Related Pictures Title-->
+                    <h4 class="text-right text-black font-bold text-xl">People also buy</h4>
+                    <!--Related Images-->
+                    <div class="flex flex-row py-5">
+                        <div class="w-full md:w-1/4">
+                            
+                        </div>
+                        <div class="w-full md:w-1/4">
+                            <a href="#" >
+                                <img src="/others.jpg" alt="" width="117px" height="147px" class="float-right">
+                            </a></div>
+                        <div class="w-full md:w-1/4">
+                            <a href="#">
+                                <img src="/others.jpg" alt="" width="117px" height="147px" class="float-right">
+                            </a>
+                        </div>
+                        <div class="w-full md:w-1/4">
+                            <a href="#" >
+                                <img src="/others.jpg" alt="" width="117px" height="147px" class="float-right">
+                            </a>
+                        </div>
+                    </div>
+                    <!--PHOTO OF THE DAY DETAILS-->
+                    <ul class="text-right">
+                        <div class="text-right text-black font-bold text-xl capitalize pb-3">details</div>
+                        <li class="text-right font-normal text-base text-gray-600">Size: 1020 x 1020 pixel</li>
+                        <li class="text-right font-normal text-base text-gray-600">Size: 15 mb</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--END OF PHOTO OF THE DAY-->
+
+        <!--GALLERY-->
+        <section class="container">
+            <!--GALLERY TOP NAVIGATION-->
+            <nav class="flex flex-row justify-between py-5">
+                <div>
+                    <div class="text-3xl text-black font-bold">Photography/<span class="text-gray-300 font-normal"> Premium Photos</span></div>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex flex-row">
+                        <li class="flex flex-row items-center md:mr-3 text-gray-400">
+                            <span class="material-icons-outlined">
+                            import_export
+                            </span>
+                             Sort by
+                        </li>
+                        <li class="flex flex-row items-center text-black">
+                            Price
+                            <span class="material-icons-outlined">
+                                keyboard_arrow_down
+                                </span>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="flex flex-row">
+                <!--SIDE MENU-->
+                <div class="w-0 md:w-1/4 flex flex-col">
+                    <!--Category Menu-->
+                    <div class=" border-b-4 border-b-gray-300">
+                        
+                        <ul class="pb-3">
+                            <div class="text-black font-bold text-xl capitalize mb-3">category</div>
+
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                People
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                Premium
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                pets
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                food
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                landmarks
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                cities
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                nature
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Price Filter-->
+                    <div class="hidden md:block mt-4">
+                        <ul class="pb-3">
+                            <div class="text-black font-bold text-xl capitalize mb-3">price range</div>
+
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                Lower than <span class="ml-1 font-semibold text-sm">&dollar;</span>20
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                <span class="ml-1 font-semibold text-sm">&dollar;</span>20 - <span class="ml-1 font-semibold text-sm">&dollar;</span>100
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                <span class="ml-1 font-semibold text-sm">&dollar;</span>100 - <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                More than <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--GALLERY IMAGES-->
+                <div class="w-full flex flex-col md:w-3/4">
+                    <!--ROW ONE-->
+                    <div class="flex flex-col md:flex-row">
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class="bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class="opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        
+
+                    </div> 
+                    <!--ROW TWO-->
+                    <div class="flex flex-col md:flex-row">
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class="opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="relative ">
+                                <div class="group">
+                                    <img src="/others.jpg" alt="" class="group-hover:shadow-md">
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class="opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full bg-black text-white uppercase py-1 group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        
+
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!--END OF GALLERY-->
+
+        <!--PAGINATION-->
+        <div class="flex flex-row justify-center">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="text-black no-underline hover:text-black hover:no-underline" aria-label="Previous">
+                            <span class="material-icons-outlined">keyboard_arrow_left</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination border-0">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+            </nav>
+        </div>
+        <!--END OF PAGINATION-->
+    </main>
+    <!--bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
