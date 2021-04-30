@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind Css-->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
+    <!--Page Title-->
+    <title>CRA-TEMPLATE</title>
+
+    <!--STYLING-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Archivo' sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white overflow-x-hidden">
+    <main class="wrapper mx-auto p-1">
+
+        <!--Navbar-->
+        <nav class="bg-white ">
+            <div class="container border-b-4 border-b-gray-300 relative">
+                <div class="flex flex-row justify-between py-3 ">
+                    <a href="index.html">
+                        <p>BEJAMAS</p>
+                    </a>
+                    <button class="relative">
+                        <span class="material-icons-outlined">
+                            shopping_cart
+                            </span>
+                            <div class="absolute bottom-0 top-7 left-4">
+                                <span class=" opacity-100 w-1.5 h-1 text-xs p-1 bg-black text-white rounded-sm">0</span>
+                            </div>
+                            
+                    </button>
+                </div>
+                <!--CART-->
+                <div class="absolute z-50 -bottom-30 right-0 ">
+                    <!--CART MODAL-->
+                    <div id="cart-modal" class="opacity-100 h-auto bg-white w-full border-4 border-gray-100 p-3">
+                        <!--CLOSE BUTTON-->
+                        <div class="flex flex-row justify-end items-center">
+                            <span class="material-icons-outlined">
+                                close
+                                </span>
+                        </div>
+                        <!--CART ITEM-->
+                        <div class="flex flex-row h-24 items-center mb-2">
+                            <!--ITEM DETAILS-->
+                            <div class="w-2/3">
+                                <div class="text-lg font-bold capitalize text-black">samurai king resting </div>
+                                <div class="flex flex-row items-center text-gray-600 text-2xl">
+                                     &dollar;10000.00
+                                </div>
+                            </div>
+                            <!--ITEM IMAGE-->
+                            <div class="w-1/3">
+                                <img src="/potd.jpg" alt="" class="w-32">
+                            </div>
+                        </div>
+                        <!--CONTROL BUTTONS-->
+                        <div class="bg-white w-full h-28 z-50 flex flex-row items-center justify-center border-t-4 border-t-gray-300 p-1">
+                            <button class="w-80 h-16 bg-white border-2 border-black text-2xl font-medium text-black uppercase">clear</button>        
+                        </div>
+                        <!--END OF CART ITEM-->
+                        
+                    </div>
+                </div>
+                <!--END OF CART-->
+            </div>
+        </nav>
+        <!--End of Navbar-->
+
+        <!--PHOTO OF THE DAY-->
+        <div class="container">
+            <div class="flex flex-row justify-between py-4">
+                <!--Photo Title-->
+                <h3 class="capitalize text-2xl md:text-3xl font-bold">samurai king resting</h3>
+                <!--Add To Car Button-->
+                <button class="hidden md:block bg-black text-white uppercase h-12 w-64 text-2xl">add to cart</button>
+            </div>
+            <!--Photo Box-->
+            <div class="relative py-3 ">
+                <img class="z-20" src="/potd.jpg"  alt="">
+                <div class="absolute bottom-0 left-0">
+                    <div class="bg-white font-semibold text-sm text-black w-64 h-16 text-center py-3">Photo of the day</div>
+                </div>
+            </div>
+            <!--Add To Car Button-->
+            <button class="mt-2 md:hidden bg-black text-white uppercase h-12 w-full text-2xl">add to cart</button>
+        </div>
+        <!--DETAILS OF PHOTO OF THE DAY-->
+        <div class="container border-b-4 border-b-gray-300">
+            <div class="flex flex-col md:flex-row py-3">
+                <!--About Photo of the Day-->
+                <div class="w-full md:w-1/2">
+                    <h4 class="text-black font-bold text-lg md:text-xl">About the Samurai King Resting</h4>
+                    <span class="py-5-5 text-gray-700 text-lg md:text-xl font-bold">Pets</span>
+                    <!--Text-->
+                    <p class="text-lg md:text-xl text-gray-600">So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text
+                     to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder 
+
+                        text <br/> <br/>to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock.</p>
+                </div>
+                <!--Related Posts-->
+                <div class="w-full md:w-1/2">
+                    <!--Related Pictures Title-->
+                    <h4 class="text-left md:text-right text-black font-bold text-xl">People also buy</h4>
+                    <!--Related Images-->
+                    <div class="flex flex-row py-2 md:py-24">
+                        <div class="w-full w-1/3">
+                            <a href="#" >
+                                <img class="float-left md:float-right px-1 w-24 md:w-28  h-28 md:h-36 md:px-0  " src="others.jpg.jpg" alt=""  >
+                            </a></div>
+                        <div class="w-full w-1/3">
+                            <a href="#">
+                                <img class="float-left md:float-right px-1 w-24 md:w-28  h-28 md:h-36 md:px-0" src="others.jpg.jpg" alt=""  >
+                            </a>
+                        </div>
+                        <div class="w-full w-1/3">
+                            <a href="#" >
+                                <img class="float-left md:float-right px-1 w-24 md:w-28  h-28 md:h-36 md:px-0" src="others.jpg.jpg" alt=""  >
+                            </a>
+                        </div>
+                    </div>
+                    <!--PHOTO OF THE DAY DETAILS-->
+                    <ul class="text-left md:text-right pl-0 md:mt-16">
+                        <div class=" text-black font-bold text-xl capitalize pb-3">details</div>
+                        <li class=" font-normal text-base text-gray-600">Size: 1020 x 1020 pixel</li>
+                        <li class=" font-normal text-base text-gray-600">Size: 15 mb</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--END OF PHOTO OF THE DAY-->
+
+        <!--GALLERY-->
+        <section class="container relative">
+            <!--GALLERY TOP NAVIGATION-->
+            <nav class="flex flex-row justify-between py-5">
+                <div class="text-base md:text-3xl text-black font-bold">Photography/<span class="text-gray-300 text-base md:text-3xl font-normal"> Premium Photos</span></div>
+                <ul class="flex flex-row">
+                    <li class="hidden md:block flex flex-row items-center  h-8 text-lg md:mr-3 text-gray-400">
+                        <span class="material-icons-outlined">
+                        import_export
+                        </span>
+                         <span>Sort by</span>
+                    </li>
+                    <li class="hidden md:block flex flex-row items-center  h-8 text-lg text-black">
+                        <span>Price</span>
+                        <span class="material-icons-outlined">
+                            keyboard_arrow_down
+                            </span>
+                        
+
+                    </li>
+                    <li class=" md:hidden flex flex-row items-center text-black">
+                        <span class="material-icons-outlined">filter_alt</span>
+                    </li>
+                </ul>
+                <!--MOBILE MENU-->
+                <div class="absolute top-20 right-0 z-50">
+                    <div class="bg-gray-100  w-96">
+                        <div class="bg-white pl-0  w-96  pt-5 pr-1 ">
+                            <!--Category Menu-->
+                            <div class="mr-10 ml-10 border-b-2 border-b-gray-300">
+                                
+                                <ul class="pl-0 pb-5">
+                                    <div class="flex flex-row justify-between">
+                                        <div class="text-black font-bold text-xl capitalize mb-3">filter</div>
+                                        <span class="material-icons-outlined">
+                                            close
+                                            </span>
+                                    </div>
+                                    
+    
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        People
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        Premium
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">check_box</span>
+                                        pets
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">check_box</span>
+                                        food
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">check_box</span>
+                                        landmarks
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        cities
+                                    </li>
+                                    <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        nature
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Price Filter-->
+                            <div class="pt-3 pl-10">
+                                <ul class="pl-0 pb-3">
+                                    <div class="text-black font-bold text-xl capitalize mb-3">price range</div>
+    
+                                    <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        Lower than <span class="ml-1 font-semibold text-sm">&dollar;</span>20
+                                    </li>
+                                    <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        <span class="ml-1 font-semibold text-sm">&dollar;</span>20 - <span class="ml-1 font-semibold text-sm">&dollar;</span>100
+                                    </li>
+                                    <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        <span class="ml-1 font-semibold text-sm">&dollar;</span>100 - <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                                    </li>
+                                    <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                        <span class="material-icons-outlined mr-3">
+                                        check_box_outline_blank
+                                        </span> 
+                                        More than <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--CONTROL BUTTONS-->
+                            <div class="bg-white w-96 h-28 z-50 flex flex-row items-center justify-between border-t-4 border-t-gray-300 px-5">
+                                <button class="w-44 h-16 bg-white border-2 border-black text-2xl font-medium text-black uppercase">clear</button>
+                                <button class="w-44 h-16 bg-black border-2 border-black text-2xl font-medium text-white uppercase ml-5">save</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </nav>
+
+            <div class="flex flex-row">
+                <!--SIDE MENU-->
+                <div class="w-0 md:w-1/4 flex flex-col">
+                    <!--Category Menu-->
+                    <div class="hidden md:block mr-10 border-b-2 border-b-gray-300">
+                        
+                        <ul class="pl-0 pb-5">
+                            <div class="text-black font-bold text-xl capitalize mb-3">category</div>
+
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                People
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                Premium
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                pets
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                food
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">check_box</span>
+                                landmarks
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                cities
+                            </li>
+                            <li class="flex flex-row items-center space-around capitalize text-2xl text-black mb-3">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                nature
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Price Filter-->
+                    <div class="hidden md:block pt-3">
+                        <ul class="pl-0 pb-3">
+                            <div class="text-black font-bold text-xl capitalize mb-3">price range</div>
+
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                Lower than <span class="ml-1 font-semibold text-sm">&dollar;</span>20
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                <span class="ml-1 font-semibold text-sm">&dollar;</span>20 - <span class="ml-1 font-semibold text-sm">&dollar;</span>100
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                <span class="ml-1 font-semibold text-sm">&dollar;</span>100 - <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                            </li>
+                            <li class="flex flex-row items-center space-around  text-2xl text-black mb-4">
+                                <span class="material-icons-outlined mr-3">
+                                check_box_outline_blank
+                                </span> 
+                                More than <span class="ml-1 font-semibold text-sm">&dollar;</span>200
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--GALLERY IMAGES-->
+                <div class="w-full flex flex-col md:w-3/4">
+                    <!--ROW ONE-->
+                    <div class="flex flex-col md:flex-row justify-center">
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class=" flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg" alt="" >
+                                    <!--Feature Tag-->
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class="bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full  h-11  bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg.jpg" alt="" >
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full h-11 bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg.jpg" alt="" >
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full h-11 bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        
+                        
+
+                    </div> 
+                    <!--ROW TWO-->
+                    <div class="flex flex-col md:flex-row justify-center">
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg.jpg" alt="" >
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full h-11 bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg.jpg" alt="" >
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full h-11 bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        <!--IMAGE-->
+                        <div class="w-full md:w-1/3 mx-3 mb-5">
+                            <div class="flex">
+                                <div class="group relative w-80">
+                                    <img class="w-80 h-96" src="others.jpg.jpg" alt="" >
+                                    <div class="absolute top-0 bottom-0">
+                                        <div class=" opacity-0 bg-white text-black font-semibold px-3 py-1 border-0 text-sm">Best seller</div>
+                                    </div>
+                                    <!--Add to cart Button-->
+                                    <div class="absolute bottom-0 left-0 right-0">
+                                        <button class="opacity-0 w-full h-11 bg-black text-white uppercase group-hover:opacity-100">add to cart</button>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!--Image Category Tag-->
+                            <div class="text-sm text-gray-600 capitalize pt-2 font-semibold">people</div>
+                            <!--Image Title-->
+                            <div class="font-bold text-black text-2xl capitalize">red bench</div>
+                            <!--Image Price-->
+                            <div class="text-gray-600  flex flex-row items-center"> <span class="text-sm">&dollar;</span><span class="text-xl">3.98</span></div>
+                        </div>
+                        
+
+                    </div> 
+                </div>   
+            </div>
+        </section>
+        <!--END OF GALLERY-->
+        <!--PAGINATION-->
+        <div class="flex flex-row w-full justify-center">
+            <nav>
+                <ul class="flex flex-row items-center h-16 justify-center">
+                    <li>
+                        <a href="#" class="text-black text-2xl md:text-3xl no-underline hover:text-black hover:no-underline text-base" aria-label="Previous">
+                            <span class="material-icons-outlined">keyboard_arrow_left</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 text-2xl md:text-3xl no-underline hover:text-black hover:no-underline px-1">1</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 text-2xl md:text-3xl no-underline hover:text-black hover:no-underline px-1">2</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black text-2xl md:text-3xl font-bold no-underline hover:text-black hover:no-underline px-1">3</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 text-2xl md:text-3xl no-underline hover:text-black hover:no-underline px-1">4</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-black text-2xl md:text-3xl no-underline hover:text-black hover:no-underline" aria-label="Previous">
+                            <span class="material-icons-outlined">keyboard_arrow_right</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--END OF PAGINATION-->
+        
+        
+    </main>
+    <!--bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
